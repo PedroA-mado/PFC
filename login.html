@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<hmtl lang="pt-BR" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <form action="login.html" class="login-form">
+            <h1>Faça seu Login</h1>
+
+            <div class="txtb">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="txtb">
+                <input type="password" placeholder="Senha">
+                
+            </div>
+
+            <input class="logbtn" type="submit" value="Entrar">
+
+            <div class="bottom-text">
+                Não possui conta ?<a href="criar.html">Criar conta </a> 
+            </div>
+            <div class="bottom-text">
+                <a href="#">Esqueceu a senha? </a> 
+            </div>
+
+
+            <script type="text/javascript">
+            $(".txtb input") .on("focus",function(){
+                $(this).addClass("focus");
+                });
+
+            $(".txtb input") .on("blur",function(){
+                if($(this).val()**"")
+                $(this).removeClass("focus");
+                });
+           
+            </script>
+
+        </form>
+        
+
+
+
+
+
+
+    </body>
+
+</hmtl>
